@@ -1168,3 +1168,27 @@ a{
         height: 300px;
     }
 }
+
+.hero-flex {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 2rem;
+}
+
+.profile-img {
+    width: 300px;
+    height: 300px;
+    border-radius: 50%; /* Makes it circular */
+    object-fit: cover;
+    border: 5px solid var(--primary-color); /* Matches your brand color */
+    box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+}
+
+/* Ensure it stacks on mobile */
+@media (max-width: 768px) {
+    .hero-flex {
+        flex-direction: column-reverse;
+        text-align: center;
+    }
+}
