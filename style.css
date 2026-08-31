@@ -996,6 +996,26 @@ a{
     background-color: #A2D1C9;
 }
 
+.color-french-blue {
+    background-color: #3b4094;
+}
+
+.color-yellow-green {
+    background-color: #b3d335;
+}
+
+.color-white-smoke {
+    background-color: #F2F3F0;
+}
+
+.color-topical-teal {
+    background-color: #1FA7A7;
+}
+
+.color-blue-slate {
+    background-color: #5E6472;
+}
+
 .dark-text {
     color: #333333;
 }
@@ -1067,7 +1087,7 @@ a{
 
 .pattern-grid {
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr;
     /* Removed fixed height to allow content to dictate size */
     min-height: 400px;
 }
@@ -1167,6 +1187,11 @@ a{
     .pattern-item {
         height: 300px;
     }
+
+    .hero-flex {
+        flex-direction: column-reverse;
+        text-align: center;
+    }
 }
 
 .hero-flex {
@@ -1185,10 +1210,59 @@ a{
     box-shadow: 0 10px 30px rgba(0,0,0,0.1);
 }
 
-/* Ensure it stacks on mobile */
-@media (max-width: 768px) {
-    .hero-flex {
-        flex-direction: column-reverse;
-        text-align: center;
-    }
+/* Google Font import for Montserrat */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap');
+
+/* Typography Utility Classes */
+.font-montserrat {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+}
+
+.font-m01-pupu {
+    font-family: 'M01_PuPu', sans-serif;
+    font-weight: bold;
+}
+
+.character-section {
+    background-color: #333333;
+    /* Dark background */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 50vh;
+    padding: 4rem 2rem;
+}
+
+.character-mockup {
+    width: 100%;
+    max-width: 1000px;
+    height: auto;
+    background: transparent;
+    border-radius: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: rgba(255, 255, 255, 0.2);
+    font-size: 1.5rem;
+    overflow: hidden;
+}
+
+.video-section {
+    width: 100%;
+    background-color: #333333;
+}
+
+.video-mockup {
+    width: 100%;
+    max-width: 100%;
+    overflow: hidden;
+    border-radius: 8px; /* Optional: adjust or remove to match your design */
+}
+
+.video-mockup video {
+    width: 100%;
+    height: auto;
+    display: block;
+    object-fit: cover;
 }
